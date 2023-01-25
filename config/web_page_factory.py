@@ -17,7 +17,7 @@ class WebDriverFactory:
         elif browser == Browser.CHROME:
             options = Options()
             options.add_argument('--headless')
-            WebDriverFactory.driver = webdriver.Chrome(options=options)
+            WebDriverFactory.driver = webdriver.Chrome('drivers/chromedriver',chrome_options=options)
         elif browser == Browser.IE10:
             WebDriverFactory.driver = webdriver.Ie()
         elif browser == Browser.SAFARI:
