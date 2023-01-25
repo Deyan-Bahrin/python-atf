@@ -9,7 +9,6 @@ class BasePage:
         self.driver = driver
         self.init_config()
 
-
     def get_driver(self):
         if self.driver:
             return self.driver
@@ -28,4 +27,3 @@ class BasePage:
         config = ConfigParser()
         config.read("/home/dbahr001/atf-pyton/config/test_properties.ini")
         return config.get("base", "browser_url")
-
