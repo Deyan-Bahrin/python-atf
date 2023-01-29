@@ -26,5 +26,5 @@ class BasePage:
     def init_config():
         config = ConfigParser()
 
-        config.read("/Users/deyan/Documents/python-atf/config/test_properties.ini")
+        config.read("/Users/deyan/.jenkins/workspace/python-atf/config/test_properties.ini")
         return config.get("base", "browser_url")
