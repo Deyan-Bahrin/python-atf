@@ -25,5 +25,5 @@ class BasePage:
     @staticmethod
     def init_config():
         config = ConfigParser()
-        config.read("/home/dbahr001/atf-pyton/config/test_properties.ini")
+        config.read("/Users/deyan/Documents/python-atf/python-atf/config/test_properties.ini")
         return config.get("base", "browser_url")
