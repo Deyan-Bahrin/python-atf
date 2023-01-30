@@ -25,5 +25,5 @@ class BasePage:
     @staticmethod
     def init_config():
         config = ConfigParser()
-        config.read("../config/test_properties.ini")
+        config.read("config/test_properties.ini")
         return config.get("base", "browser_url")
