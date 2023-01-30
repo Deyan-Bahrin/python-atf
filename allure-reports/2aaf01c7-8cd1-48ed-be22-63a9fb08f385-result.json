@@ -1,0 +1,52 @@
+{
+  "name": "test_hello",
+  "status": "passed",
+  "steps": [
+    {
+      "name": "test",
+      "status": "passed",
+      "start": 1675079572417,
+      "stop": 1675079587511
+    }
+  ],
+  "start": 1675079572417,
+  "stop": 1675079587511,
+  "uuid": "acbbd412-d62a-450a-b488-5d50d66ac6d1",
+  "historyId": "eeac07352ddb38650d686afc067df07a",
+  "testCaseId": "79f0ba153a5404f772b8b2afc0da5e7c",
+  "fullName": "tests.web.test_first.Tests#test_hello",
+  "labels": [
+    {
+      "name": "parentSuite",
+      "value": "tests.web"
+    },
+    {
+      "name": "suite",
+      "value": "test_first"
+    },
+    {
+      "name": "subSuite",
+      "value": "Tests"
+    },
+    {
+      "name": "host",
+      "value": "Deyans-MacBook-Air.local"
+    },
+    {
+      "name": "thread",
+      "value": "13235-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "tests.web.test_first"
+    }
+  ]
+}

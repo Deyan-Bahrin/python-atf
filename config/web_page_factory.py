@@ -9,7 +9,6 @@ class WebDriverFactory:
     IMPLICIT_WAIT_TIMEOUT = 5
     driver = None
 
-
     @staticmethod
     def get_driver(browser: Browser):
         if browser == Browser.FIREFOX:
