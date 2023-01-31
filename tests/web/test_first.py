@@ -16,5 +16,13 @@ class Tests:
     def test_hello(self):
         self.driver.get(self.base_url)
         home_pages = FtHomePage(self.driver)
+        self.clickOnSubscribeButton(home_pages)
+
+    @allure.step("Find The Subscribe Button")
+    def clickOnSubscribeButton(self, home_pages):
         subscribe_page = home_pages.click_on_subscribe_button()
-        subscribe_page.click_on_weekend_button()
+        self.clickOnWeekendOnlyButton(subscribe_page)
+
+    @allure.step("Click the Weekend Only button")
+    def clickOnWeekendOnlyButton(self, subscribe_page):
+        subscribe_page.click_on_weekend_button
