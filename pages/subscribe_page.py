@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from pages.base_page import BasePage
+import allure
 
 
 class SubscribePage(BasePage):
@@ -10,5 +11,6 @@ class SubscribePage(BasePage):
         super().__init__(driver)
         self.weekend_page = driver.find_element(By.XPATH, self.weekend_page)
 
+    @allure.step("Click the Weekend Only button")
     def click_on_weekend_button(self):
         self.weekend_page.click()
